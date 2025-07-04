@@ -68,7 +68,7 @@ const HeroSection = ({ activeSection, scrollToSection }: HeroSectionProps) => {
             size="lg"
             asChild
           >
-            <a href="https://pdflink.to/1fa5f2db/" target="_blank" rel="noopener noreferrer">
+            <a href="https://pdflink.to/caf91b39/" target="_blank" rel="noopener noreferrer">
               <Download className="mr-2 h-4 w-4" />
               Download Resume
             </a>
