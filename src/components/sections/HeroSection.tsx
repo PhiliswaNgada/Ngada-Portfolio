@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import { NavigationSection } from "@/types";
 
 interface HeroSectionProps {
   activeSection: string;
@@ -9,6 +10,8 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({ activeSection, scrollToSection }: HeroSectionProps) => {
+  const navigationSections: NavigationSection[] = ['about', 'projects', 'skills', 'contact'];
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div 
@@ -25,7 +28,7 @@ const HeroSection = ({ activeSection, scrollToSection }: HeroSectionProps) => {
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold text-purple-400">Philiswa Ngada</div>
             <div className="hidden md:flex space-x-8">
-              {['about', 'projects', 'skills', 'contact'].map((section) => (
+              {navigationSections.map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}

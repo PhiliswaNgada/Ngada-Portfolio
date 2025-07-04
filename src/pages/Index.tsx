@@ -6,13 +6,14 @@ import ProjectsSection from '@/components/sections/ProjectsSection';
 import SkillsSection from '@/components/sections/SkillsSection';
 import ContactSection from '@/components/sections/ContactSection';
 import Footer from '@/components/sections/Footer';
+import { NavigationSection } from '@/types';
 
 const Index = () => {
-  const [activeSection, setActiveSection] = useState('about');
+  const [activeSection, setActiveSection] = useState<NavigationSection>('about');
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'projects', 'skills', 'contact'];
+      const sections: NavigationSection[] = ['about', 'projects', 'skills', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {

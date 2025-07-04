@@ -11,3 +11,5 @@ export interface Project {
 export interface Skills {
   [category: string]: string[];
 }
+
+export type NavigationSection = 'about' | 'projects' | 'skills' | 'contact';
