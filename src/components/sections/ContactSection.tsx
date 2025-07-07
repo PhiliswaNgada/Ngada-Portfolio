@@ -54,7 +54,7 @@ const ContactSection = () => {
 
             <div className="mt-8">
               <Button size="lg" asChild className="bg-purple-600 hover:bg-purple-700">
-                <a href="https://pdflink.to/caf91b39/" target="_blank" rel="noopener noreferrer">
+                <a href="https://pdflink.to/541ee106/" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-4 w-4" />
                   Download PDF Resume
                 </a>
